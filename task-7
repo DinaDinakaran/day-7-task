@@ -1,0 +1,77 @@
+1.Class - Movie.....................................
+class movie{
+    constructor(a,b,c){
+        this.film=a;
+        this.studio=b;
+        this.rating=c;
+    }
+    the_movie(){
+        console.log(this.film)
+    }
+    the_studio(){
+        console.log(this.studio)
+    }
+    the_rating(){
+        console.log([this.rating])
+    }
+}
+let x= new movie("Casino Royale","Eon Productions","PG­13")
+x.the_movie();
+x.the_studio();
+x.the_rating();
+2.Convert the UML diagram to Typescript class. - use number for double............
+class circul{
+   
+    constructor(x ,color){
+        
+        this.Y=x;
+        this.color=color;
+        
+    }
+    getcircumfrance(){
+       var a= 2*3.141
+       
+       var b=a*this.Y
+       return b
+      
+    }
+    getcolor(){
+        return this.color;
+    }
+}
+let x= new circul(1,"red");
+console.log(x.getcircumfrance())
+console.log(x.getcolor());
+3.Write a “person” class to hold all the details................................\
+class Dina{
+    details(){
+        var obj={
+            name:"dina",
+            age:23,
+            email:"dinadinakaran143@gmail.com",
+            education:"BE-mechanical engineering",
+            native:"erode"
+        }
+        console.log(obj)
+    }
+} 
+var z=new Dina();
+z.details();
+4.write a class to calculate uber price...........................
+class uber{
+    constructor(up,down){
+        this.start=up;
+        this.end=down;
+    }
+     customer(){
+         var a = this.start+this.end
+         if(a<1){
+             console.log("re:15")
+         }else if(a<=5){
+             console.log("rs:70")
+         }else if(a>6 ||a>10){
+            console.log("rs:135")
+        }
+     }
+} let y= new uber(2,3)//assume stop 2 to stop 3 distance 5km
+y.customer();
